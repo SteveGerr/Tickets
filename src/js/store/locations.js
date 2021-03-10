@@ -12,6 +12,7 @@ class Locations {
     const response = await Promise.all([
       this.api.countries(),
       this.api.cities(),
+      this.api.prices()
     ]);
 
     // ДЕструктурируем
